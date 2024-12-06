@@ -2,6 +2,6 @@ services:
   web:
     build:
       context: ./698subhashchandra/cafe-app
-    image: 698subhashchandra/cafe-app:latest
+    image: .
     ports:
       - "8000:8000"
