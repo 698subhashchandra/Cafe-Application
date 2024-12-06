@@ -1,8 +1,9 @@
+version: '3.8'
+
 services:
   web:
-    build:
-    image: 698subhashchandra/cafe-app:tagname:latest  # Replace 'your-image-name' with a meaningful name
+    build: .  # Short syntax for build context
+    image: 698subhashchandra/cafe-app:latest
     ports:
       - "8000:8000"
-    # Optional: Add a command to run the application if it's not in the Dockerfile
     command: python manage.py runserver 0.0.0.0:8000
