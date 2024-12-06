@@ -5,5 +5,5 @@ services:
     build: .  # Short syntax for build context
     image: 698subhashchandra/cafe-app:latest
     ports:
-      - "8000:8000"
+      - "8080:80"
     
